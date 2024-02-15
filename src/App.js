@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./Components/Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import WelcomePage from "./Components/Home";
+import "./Components/WelcomePage.css";
+import Portal from "./Components/Portal";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
+import Contactme from "./Components/Contactme";
+import Certifates from "./Components/Certificates";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>ihfuwehi
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Portal />}>
+            <Route path="/" element={<WelcomePage />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
+            {/* <Route path="certificates" element={<Certifates />} /> */}
+            <Route path="contact" element={<Contactme />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
+     
+    </>
   );
 }
 

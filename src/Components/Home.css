@@ -1,0 +1,348 @@
+.home-img {
+  width: 775px;
+  height: 622px;
+}
+
+.intro {
+  position: relative;
+  top: 150px;
+  padding-left: 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+.github {
+  border: 2px solid white;
+  display: inline-block;
+  background-color: aliceblue;
+  border-radius: 30%;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.github:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.github:active {
+  color: #000;
+}
+
+.github:active:after {
+  background: transparent;
+}
+
+.github:hover:before {
+  opacity: 2;
+}
+
+.github:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 252, 252);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.linkedin {
+  border: 2px solid white;
+  display: inline-block;
+  background-color: aliceblue;
+  border-radius: 30%;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.linkedin:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.linkedin:active {
+  color: #000;
+}
+
+.linkedin:active:after {
+  background: transparent;
+}
+
+.linkedin:hover:before {
+  opacity: 2;
+}
+
+.linkedin:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 252, 252);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.myself-title {
+  position: relative;
+  top: 15px;
+  text-decoration: none;
+  border: 1px solid rgb(228, 228, 241);
+  border-radius: 30px;
+  box-shadow: #a79696 0px 2px 5px 1px;
+  background: #474bff;
+  background: -webkit-linear-gradient(42deg, #474bff 0%, #bc48ff 100%);
+  background: linear-gradient(42deg, #474bff 0%, #bc48ff 100%);
+  color: white;
+  padding: 7px;
+}
+
+.myself {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  gap: 15px;
+}
+
+.myself :hover {
+  color: rgb(255, 255, 70)
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .home-img {
+    width: 350px;
+    height: 290px;
+    position: relative;
+    top: 370px;
+  }
+
+  .intro {
+    position: absolute;
+    right: 70px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+  }
+
+
+
+  .github {
+    border: 2px solid white;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 30%;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+  }
+
+  .github:before {
+    content: "";
+    background: linear-gradient(45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+
+  .github:active {
+    color: #000;
+  }
+
+  .github:active:after {
+    background: transparent;
+  }
+
+  .github:hover:before {
+    opacity: 2;
+  }
+
+  .github:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(252, 252, 252);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 400% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .linkedin {
+    border: 2px solid white;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 30%;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+  }
+
+  .linkedin:before {
+    content: "";
+    background: linear-gradient(45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+
+  .linkedin:active {
+    color: #000;
+  }
+
+  .linkedin:active:after {
+    background: transparent;
+  }
+
+  .linkedin:hover:before {
+    opacity: 2;
+  }
+
+  .linkedin:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(252, 252, 252);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .myself-title {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(228, 228, 241);
+    border-radius: 30px;
+    box-shadow: #a79696 0px 2px 5px 1px;
+    background: #474bff;
+    background: -webkit-linear-gradient(42deg, #474bff 0%, #bc48ff 100%);
+    background: linear-gradient(42deg, #474bff 0%, #bc48ff 100%);
+    color: white;
+    padding: 5px;
+  }
+
+  .myself {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+
+}
